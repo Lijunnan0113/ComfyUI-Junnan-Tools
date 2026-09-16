@@ -1,0 +1,2 @@
+# No additional dependencies.
+# Uses torch, comfy_api, and comfy provided by the ComfyUI runtime.

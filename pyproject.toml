@@ -1,0 +1,12 @@
+[project]
+name = "junnan-tools"
+version = "0.1.0"
+description = "Utility nodes for ComfyUI detection workflows."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/Lijunnan0113/ComfyUI-Junnan-Tools"
+
+[tool.comfy]
+DisplayName = "Junnan Tools"
