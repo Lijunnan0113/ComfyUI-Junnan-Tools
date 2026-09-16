@@ -1,7 +1,8 @@
 # ComfyUI Junnan Tools
 
 Standalone ComfyUI custom-node package providing utility nodes for
-detection and image workflows. V3 `ComfyExtension` registration only.
+detection, image, and MiniMax H3 skill workflows. V3 `ComfyExtension`
+registration only.
 
 ## Installation
 
@@ -50,6 +51,17 @@ RT-DETR Detect ──┬──→ DrawBBoxes (official) ──→ image preview
 
 After migration, restore the official `nodes_rtdetr.py` and delete
 your魔改 copy.
+
+### MiniMax H3 Skills (`JunnanMiniMaxH3Skills`)
+
+Reads `SKILL.md` files from a MiniMax H3 `skills` directory and outputs
+JSON tool definitions for an LLM Party tool dispatcher. Set `Skills Directory`
+to the `skills` directory of the MiniMax H3 repository. The default package
+path is `nodes/skills`; it is intentionally empty until you provide skill
+files or select another directory.
+
+The node exposes `load_h3_skill` and `read_h3_skill_resource` handlers and
+rejects resource paths that leave the selected skill directory.
 
 ## Development
 
